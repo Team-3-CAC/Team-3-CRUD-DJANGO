@@ -18,6 +18,11 @@ Por ultimo creamos un super usuario
 
 `docker-compose run web python manage.py createsuperuser`
 
+## Fer: hasta acá ya está todo hecho, user y password del super usuario: root
+
+
+
+
 Actividades:
 
 * Cada Miembro del equipo debe cambiar el archivo readme.md en la seccion de contributors (si no la tiene agregarla)
