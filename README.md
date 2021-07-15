@@ -27,6 +27,8 @@ Actividades:
 
 * Cada Miembro del equipo debe cambiar el archivo readme.md en la seccion de contributors (si no la tiene agregarla)
 
+MARCOS SANTILLAN  
+
 * Cada miembro del equipo debe poder descargar el proyecto del repositorio y probarlo localmente
 
 * Crear un proyecto de github
