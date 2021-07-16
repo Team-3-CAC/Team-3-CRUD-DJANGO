@@ -10,15 +10,27 @@ Ahora creamos una app que se llama encuestas
 `docker-compose run web python manage.py startapp encuestas`
 
 
-Cada vez que modifiquemos nuestro modelo de datos... vamos a correr el siguiente comando
+Cada vez que modifiquemos nuestro modelo de datos... vamos a correr el siguiente comando 
+(altera el contenido de la DB pero no modifica el contenido del código fuente)
 
 `docker-compose run web python manage.py migrate`
 
 Por ultimo creamos un super usuario
+(altera el contenido de la DB pero no modifica el contenido del código fuente)
 
 `docker-compose run web python manage.py createsuperuser`
 
-## Fer: hasta acá ya está todo hecho, user y password del super usuario: root
+** superuser (django) creado: root (user and password)
+
+
+** Para correr los tests:
+`docker-compose run web python manage.py test`
+
+
+## Colaboradores:
+
+- Fernando Camino
+- Mauricio Melgaejo
 
 
 
@@ -33,6 +45,6 @@ MARCOS SANTILLAN
 
 * Crear un proyecto de github
 
-* crear N urls con N respuestas distintas dependiendo de la cantidad de miembros del equipo.
+* Crear N urls con N respuestas distintas dependiendo de la cantidad de miembros del equipo.
 
 * Tienen que tener un test escrito en el archivo tests.py
