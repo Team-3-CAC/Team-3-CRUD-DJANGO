@@ -28,7 +28,7 @@ Por ultimo creamos un super usuario
 
 
 ## Colaboradores:
-
+- Fernando Camino
 
 
 
