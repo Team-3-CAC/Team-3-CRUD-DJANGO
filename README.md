@@ -32,6 +32,8 @@ Por ultimo creamos un super usuario
 - Fernando Camino
 - Mauricio Melgaejo
 - Marcos Santillan  
+- Paola Errazti
+
 
 
 
