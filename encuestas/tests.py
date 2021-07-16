@@ -16,3 +16,7 @@ class MyIntegrationTest(TestCase):
 
     def testSegundoHelloWorld(self):
         self.fail()
+
+    def testSaludo(self):
+        request = self.client.get("/saludo/")
+        self.assertEqual(request.content , "Saludos! desde django para codo a codo")    
