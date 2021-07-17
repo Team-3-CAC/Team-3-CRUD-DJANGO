@@ -19,4 +19,9 @@ class MyIntegrationTest(TestCase):
 
     def testSaludo(self):
         request = self.client.get("/saludo/")
-        self.assertEqual(request.content , "Saludos! desde django para codo a codo")    
+        self.assertEqual(request.content , "Saludos! desde django para codo a codo")
+    
+    def testWelcome(self):
+        request = self.client.get("/welcome/")
+        self.assertEqual(request.content , "Bienvenido desde Django para Codo a Codo 4.0")
+        
