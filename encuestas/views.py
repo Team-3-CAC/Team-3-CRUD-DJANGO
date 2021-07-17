@@ -8,3 +8,7 @@ def gretting(request):
 
 def saludo(request):
     return HttpResponse("Saludos! desde django para codo a codo")    
+
+
+def datos(request):
+    return HttpResponse("Por favor complete sus datos personales")
