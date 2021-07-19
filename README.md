@@ -10,10 +10,13 @@ Ahora creamos una app que se llama encuestas
 `docker-compose run web python manage.py startapp encuestas`
 
 
-Cada vez que modifiquemos nuestro modelo de datos... vamos a correr el siguiente comando 
+Cada vez que modifiquemos nuestro modelo de datos... vamos a correr el siguiente comando
+Toma la información de las estructuras pre-armadas de las aplications que están instaladas
 (altera el contenido de la DB pero no modifica el contenido del código fuente)
 
-`docker-compose run web python manage.py migrate`
+`docker-compose run web python manage.py migrate` (aplica los nuevos modelos creados con el makemigrations)
+
+** `docker-compose run web python manage.py makemigrations` (crea el nuevo modelo de datos en un .py)
 
 Por ultimo creamos un super usuario
 (altera el contenido de la DB pero no modifica el contenido del código fuente)
@@ -34,22 +37,17 @@ Por ultimo creamos un super usuario
 - Marcos Santillan  
 - Paola Errazti
 
+## Actividades:
 
+- [ ] Cada Miembro del equipo debe cambiar el archivo readme.md en la seccion de contributors (si no la tiene agregarla).
 
+- [ ] Cada miembro del equipo debe poder descargar el proyecto del repositorio y probarlo localmente.
 
+- [ ] Crear un proyecto de github.
 
-Actividades:
+- [ ] Crear N urls con N respuestas distintas dependiendo de la cantidad de miembros del equipo.
 
-* Cada Miembro del equipo debe cambiar el archivo readme.md en la seccion de contributors (si no la tiene agregarla)
-
-
-* Cada miembro del equipo debe poder descargar el proyecto del repositorio y probarlo localmente
-
-* Crear un proyecto de github
-
-* Crear N urls con N respuestas distintas dependiendo de la cantidad de miembros del equipo.
-
-* Tienen que tener un test escrito en el archivo tests.py
+- [ ] Tienen que tener un test escrito en el archivo tests.py.
 
 - [ ] Crear un modelo Usuario (o user) crear N properties por cada N integrante del equipo.
 
