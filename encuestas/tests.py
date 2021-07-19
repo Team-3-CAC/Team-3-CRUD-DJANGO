@@ -18,11 +18,11 @@ class MyIntegrationTest(TestCase):
         self.assertEqual(response.status_code, 200 )
 
 
-    def testSaludo(self): # test Mauricio
+    def testSaludo(self): # Mauricio
         response = self.client.get("/saludo/")
         self.assertContains(response, "Saludos! desde django para codo a codo")
     
-    def testWelcome(self): # test Paola
+    def testWelcome(self): # Paola
         response = self.client.get("/welcome/")
         self.assertContains(response, "Bienvenido desde Django para Codo a Codo 4.0")
 
@@ -30,7 +30,7 @@ class MyIntegrationTest(TestCase):
         response = self.client.get("/datos/")
         self.assertContains(response, "Por favor complete sus datos personales")
 
-    def testNumero(self): # test Fernando
+    def testNumero(self): # Fernando
         response = self.client.get("/numero/")
         responseNumber = int(response.content)
         self.assertTrue(responseNumber in range(0,6))
