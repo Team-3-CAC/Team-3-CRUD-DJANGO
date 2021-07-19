@@ -21,8 +21,8 @@ from encuestas.views import gretting, saludo, welcome, datos, numero
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', gretting),
-    path('saludo/', saludo),
-    path('welcome/', welcome),
-    path('datos/', datos),
-    path('numero/', numero)
+    path('saludo/', saludo),    # Mauricio
+    path('welcome/', welcome),  # Paola
+    path('datos/', datos),      # Marcos
+    path('numero/', numero)     # Fernando
 ]

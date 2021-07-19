@@ -1,8 +1,6 @@
 from django.test import TestCase
 
 # Create your tests here.
-
-
 class MyIntegrationTest(TestCase):
 
     def setUp(self) -> None:
@@ -28,6 +26,10 @@ class MyIntegrationTest(TestCase):
         response = self.client.get("/welcome/")
         self.assertContains(response, "Bienvenido desde Django para Codo a Codo 4.0")
 
+    def testDatos(self): # Marcos
+        response = self.client.get("/datos/")
+        self.assertContains(response, "Por favor complete sus datos personales")
+
     def testNumero(self): # test Fernando
         response = self.client.get("/numero/")
         responseNumber = int(response.content)
@@ -36,7 +38,7 @@ class MyIntegrationTest(TestCase):
 
 #Testing the CRUD
 
-#    def testCreate(self):
+#    def testRead(self):
 #        self.fail()
 
 #    def testUpdate(self):
@@ -45,5 +47,5 @@ class MyIntegrationTest(TestCase):
 #    def testDelete(self):
 #        self.fail()
 
-#    def testRead(self):
+#    def testCreate(self):
 #        self.fail()
