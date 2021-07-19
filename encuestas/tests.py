@@ -12,20 +12,36 @@ class MyIntegrationTest(TestCase):
         return super().setUp()
 
     def testHelloWrold(self):
-        request = self.client.get("/users/")
-        self.assertEqual(request.content, "Hello world from Django for Codo a Codo 4.0")
+        response = self.client.get("/users/")
+        self.assertContains(response , "Hello world from Django for Codo a Codo 4.0")
 
-    def testSegundoHelloWorld(self):
-        self.fail()
+    def testSatusCodeHelloWorld(self):
+        response = self.client.get("/users/")
+        self.assertEqual(response.status_code, 200 )
 
     def testSaludo(self):
-        request = self.client.get("/saludo/")
-        self.assertEqual(request.content, "Saludos! desde django para codo a codo")
+        response = self.client.get("/saludo/")
+        self.assertContains(response, "Saludos! desde django para codo a codo")
     
     def testWelcome(self):
-        request = self.client.get("/welcome/")
-        self.assertEqual(request.content , "Bienvenido desde Django para Codo a Codo 4.0")
+        response = self.client.get("/welcome/")
+        self.assertContains(response, "Bienvenido desde Django para Codo a Codo 4.0")
 
-    def testDatos(self):
-        request = self.client.get("/datos/")
-        self.assertEqual(request.content, "Por favor complete sus datos personales")
+    def testNumero(self):
+        response = self.client.get("/numero/")
+        self.assertContains(response, "4")
+
+
+#Testing the CRUD
+
+#    def testCreate(self):
+#        self.fail()
+
+#    def testUpdate(self):
+#        self.fail()
+
+#    def testDelete(self):
+#        self.fail()
+
+#    def testRead(self):
+#        self.fail()
