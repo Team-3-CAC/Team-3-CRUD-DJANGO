@@ -10,12 +10,13 @@ Ahora creamos una app que se llama encuestas
 `docker-compose run web python manage.py startapp encuestas`
 
 
-Cada vez que modifiquemos nuestro modelo de datos... vamos a correr el siguiente comando 
+Cada vez que modifiquemos nuestro modelo de datos... vamos a correr el siguiente comando
+Toma la información de las estructuras pre-armadas de las aplications que están instaladas
 (altera el contenido de la DB pero no modifica el contenido del código fuente)
 
-`docker-compose run web python manage.py migrate`
+`docker-compose run web python manage.py migrate` (aplica los nuevos modelos creados con el makemigrations)
 
-** `docker-compose run web python manage.py makemigrations`
+** `docker-compose run web python manage.py makemigrations` (crea el nuevo modelo de datos en un .py)
 
 Por ultimo creamos un super usuario
 (altera el contenido de la DB pero no modifica el contenido del código fuente)

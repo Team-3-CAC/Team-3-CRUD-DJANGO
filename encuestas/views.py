@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import User
 import random
 
 # Create your views here.
@@ -17,4 +18,4 @@ def datos(request):
     return HttpResponse("Por favor complete sus datos personales")
 
 def numero(request):
-    return HttpResponse("Probando tests en Codo a Codo 4.0")
+    return HttpResponse(random.randint(0, 6))

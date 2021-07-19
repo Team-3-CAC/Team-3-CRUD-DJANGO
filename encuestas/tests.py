@@ -11,25 +11,27 @@ class MyIntegrationTest(TestCase):
         '''
         return super().setUp()
 
-    def testHelloWrold(self):
+    def testHelloWrold(self): # ejemplo profe
         response = self.client.get("/users/")
         self.assertContains(response , "Hello world from Django for Codo a Codo 4.0")
 
-    def testSatusCodeHelloWorld(self):
+    def testSatusCodeHelloWorld(self): # ejemplo profe
         response = self.client.get("/users/")
         self.assertEqual(response.status_code, 200 )
 
-    def testSaludo(self):
+
+    def testSaludo(self): # test Mauricio
         response = self.client.get("/saludo/")
         self.assertContains(response, "Saludos! desde django para codo a codo")
     
-    def testWelcome(self):
+    def testWelcome(self): # test Paola
         response = self.client.get("/welcome/")
         self.assertContains(response, "Bienvenido desde Django para Codo a Codo 4.0")
 
-    def testNumero(self):
+    def testNumero(self): # test Fernando
         response = self.client.get("/numero/")
-        self.assertContains(response, "4")
+        responseNumber = int(response.content)
+        self.assertTrue(responseNumber in range(0,6))
 
 
 #Testing the CRUD
