@@ -49,3 +49,19 @@ class MyIntegrationTest(TestCase):
 
 #    def testCreate(self):
 #        self.fail()
+
+'''
+def read(request):
+    myUsers = User.objects.all()
+    print("Hay una cantidad de", len(myUsers), "usuarios registrados actualmente")
+    return HttpResponse("READ Hello world from Django for Codo a Codo 4.0:")
+
+def update(data):
+    return HttpResponse("UPDATE Hello world from Django for Codo a Codo 4.0:")
+
+def delete(data):
+    return HttpResponse("DELETE Hello world from Django for Codo a Codo 4.0:")
+
+def create(data):
+    return HttpResponse("CREATE Hello world from Django for Codo a Codo 4.0:")
+'''

@@ -4,6 +4,8 @@ from .models import User
 import random
 
 # Create your views here.
+def home(request):
+    return render(request, "base.html")
 
 def saludo(request): # Mauricio
     return HttpResponse("Saludos! desde django para codo a codo")
